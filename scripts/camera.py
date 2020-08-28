@@ -22,7 +22,7 @@ class Processor(object):
         img_msg.is_bigendian = False # not sure about this either
 
         img_msg.data = buf
-        img_msg.step = len(img_msg.data)
+        img_msg.step = 3 * self.width
 
         #print("publishing image message")
 
